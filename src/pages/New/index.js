@@ -86,14 +86,6 @@ const New = () => {
         InputMaskChange={(t) => handleMaskCurrency(t)}
         
         />
-        {/* <TextInput 
-        placeholder="Valor desejado"
-        keyboardType="numeric"
-        returnKeyType="next"
-        value={valor}
-        onChangeText={(t) => setValor(t)}
-        onSubmitEditing={() => Keyboard.dismiss()}
-        /> */}
         <Picker onChange={setTipo} tipo={tipo}/>
         <SubmitButtom onPress={() => handleSubmit()}>
           <SubmitText>Registrar</SubmitText>
